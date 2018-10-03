@@ -22,10 +22,8 @@ class MainPage(webapp2.RequestHandler):
 
 
 
-ppp = MainPage()
-
 
 app = webapp2.WSGIApplication([
-    ('/ihereapi/.*', ppp.write_file()),
+    ('/ihereapi/.*', MainPage),
 ], debug=True)
 
